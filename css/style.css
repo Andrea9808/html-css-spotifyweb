@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
+
 
 /* STILI CONTAINER PLAYER */
 
@@ -33,6 +35,93 @@
 /* BARRA CONTROLLI */
 
 .controller{
-    height: 100px;
-    background-color: gray;
+    height: 90px;
+    background-color:rgb(49, 40, 40);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 10px;
+}
+
+/* PARTE SINISTRA */
+
+.controller i{
+    padding: 10px;
+    font-size: 17px;
+}
+
+.controller img{
+    width: 50px;
+}
+
+.left_col{
+    display: flex;
+}
+
+.left_col h6{
+    font-size: 10px;
+    color: white;
+}
+
+.content_controller{
+    display: flex;
+    align-items: center;
+    padding-left: 17px;
+    color: #988e8e;
+}
+
+/* PARTE CENTRALE */
+
+/* linea play */
+
+.center_col {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.container_play_bar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.play_bar{
+    height: 4px;
+    border-radius: 10px;
+    width: 50%;
+    background-color: rgb(97, 95, 95);
+}
+
+.progress{
+    height: 100%;
+    width: 40%;
+    border-radius: 10px;
+    background-color: white;
+}
+
+/* PARTE DESTRA */
+
+/* linea volume */
+
+.right_col{
+    width: 15%;
+}
+
+.container__volume{
+  display: ruby;
+}
+
+.volume_bar{
+    height: 4px;
+    border-radius: 10px;
+    width: 40%;
+    background-color: rgb(97, 95, 95);
+    vertical-align: middle;
 }
