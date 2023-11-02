@@ -131,10 +131,46 @@
 }
 
 
+/* **************ANIMAZIONI*************** */
+
+.play_bar:hover .progress{
+    background-color: rgb(153, 254, 0);
+    position: relative;
+}
+
+.play_bar:hover .progress::after{
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(153, 254, 0);
+    position: absolute;
+    top: -60%;
+    left: 97%;
+}
+
+
+.volume_bar:hover .progress{
+    background-color: rgb(153, 254, 0);
+    position: relative;
+}
+
+.volume_bar:hover .progress::after{
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(153, 254, 0);
+    position: absolute;
+    top: -60%;
+    left: 97%;
+}
+
+
 /* VERSIONE MD */
 
 
-/* CONTOLLER PLAY */
+
 
 
 
@@ -142,6 +178,7 @@
 
 @media all and (max-width:700px){
     
+    /* CONTOLLER PLAY */
 
     .controller i{
         padding: 5px;
@@ -151,6 +188,8 @@
 
 
 /* VERSIONE XS */
+
+    /* CONTOLLER PLAY */
 
 @media all and (max-width:480px){
 
