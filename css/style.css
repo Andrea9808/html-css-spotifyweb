@@ -53,10 +53,12 @@
 
 .controller img{
     width: 50px;
+    margin-left: 10px;
 }
 
 .left_col{
     display: flex;
+    align-items: center;
 }
 
 .left_col h6{
@@ -111,11 +113,13 @@
 /* linea volume */
 
 .right_col{
-    width: 15%;
+    width: 200px;
 }
 
 .container__volume{
-  display: ruby;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
 }
 
 .volume_bar{
@@ -124,4 +128,34 @@
     width: 40%;
     background-color: rgb(97, 95, 95);
     vertical-align: middle;
+}
+
+
+/* VERSIONE MD */
+
+
+/* CONTOLLER PLAY */
+
+
+
+/* VERSIONE S */
+
+@media all and (max-width:700px){
+    
+
+    .controller i{
+        padding: 5px;
+    }
+
+}
+
+
+/* VERSIONE XS */
+
+@media all and (max-width:480px){
+
+    .controller i{
+        padding: 2px;
+    }
+
 }
