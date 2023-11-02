@@ -16,10 +16,101 @@
 
 /* STILI MENU LATERALE */
 
+.container_sidebar{
+    font-size: 12px;
+}
+
+.container_sidebar img,.playlist,.foot_menu{
+    margin: 20px;
+}
+
 .menu_music{
     width: 250px;
     height: 100%;
     background-color: black;
+}
+
+.menu_music img{
+    width: 100px;
+}
+
+.home{
+    color: gray;
+    display: grid;
+    gap: 5px;
+    margin-top: 15px;
+}
+
+.home span{
+    padding-left: 20px;
+}
+
+
+
+.playlist{
+    display: grid;
+    color: #988e8e;
+    gap: 10px;
+    padding-top: 20px;
+}
+
+.playlist>span{
+    color: white;
+}
+
+.plus p{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.fa-plus-square{
+    color: gray;
+    font-size: 37px;
+}
+
+.playlist ul li{
+    padding-bottom: 15px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.scrollbar{
+    overflow-y: auto;
+    flex-grow: 1;
+    min-height: 75px;
+}
+
+.foot_menu{
+    margin-top: 70px;
+    position: fixed;
+    z-index: 500;
+}
+
+#install{
+    color: #988e8e;
+}
+
+.foot_menu hr{
+    width: 200px;
+    margin-top: 10px;
+}
+
+.foot_menu span{
+    color: white;
+
+}
+
+.fa-user{
+    color: white;
+    background-color: #988e8e;
+    font-size: 20px;
+    border-radius: 50%;
+    padding: 5px;
+    margin-top: 10px;
+
 }
 
 
@@ -131,11 +222,16 @@
 }
 
 
+
+
+
 /* **************ANIMAZIONI*************** */
 
+/* barra player */
 .play_bar:hover .progress{
     background-color: rgb(153, 254, 0);
     position: relative;
+    cursor: pointer;
 }
 
 .play_bar:hover .progress::after{
@@ -153,6 +249,7 @@
 .volume_bar:hover .progress{
     background-color: rgb(153, 254, 0);
     position: relative;
+    cursor: pointer;
 }
 
 .volume_bar:hover .progress::after{
@@ -166,6 +263,19 @@
     left: 97%;
 }
 
+/* sidebar */
+
+.home span:hover{
+    color: white;
+    border-left: 3px solid greenyellow;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.playlist li:hover{
+    color: white;
+    cursor: pointer;
+}
 
 /* VERSIONE MD */
 
