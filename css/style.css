@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* STILI CONTAINER PLAYER */
+
+.container_player{
+    height: calc(100vh - 100px);
+    display: flex;
+}
+
+
+/* STILI MENU LATERALE */
+
+.menu_music{
+    width: 250px;
+    height: 100%;
+    background-color: black;
+}
+
+
+/* STILI CONTENITORE PRINCIPALE (ALBUM) */
+
+    .main_content{
+        flex-grow: 1;
+        height: 100%;
+        background-color: brown;
+    }
+
+
+/* BARRA CONTROLLI */
+
+.controller{
+    height: 100px;
+    background-color: gray;
+}
