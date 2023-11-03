@@ -113,14 +113,29 @@ ul{
 
 }
 
+.install{
+    display: flex;
+    align-items: center;
+    margin: -25px -25px;
+    padding-top: 10px;
+}
+
+.install span{
+   color: #988e8e;
+}
+
+.install img{
+    width: 10%;
+}
+
 .profile{
     display: flex;
     align-items: center;
-    margin: 0 -20px;
+    margin: -12px -20px;
 
 }
 
-.foot_menu img{
+.profile img{
     width: 10%;
     background-color: #988e8e;
     border-radius: 50%;
@@ -480,20 +495,37 @@ ul{
 
 @media all and (max-width:480px){
 
-    #logo_small{
-        width: 45%;
-    }
+ 
 
     .controller i{
         padding: 2px;
     }
 
+
     /* SIDEBAR */
+
+    #logo_small{
+        width: 20px;
+        display: block;
+    }
+
+
+    .home{
+        margin-top: 40px;
+    }
 
     #logo_main{
         display: none;
     }
 
+    .profile img{
+        width: 20px;
+    }
+
+    .container_sidebar{
+        display: flex;
+        flex-direction: column;
+    }
 
     .container_sidebar span{
         display: none;
@@ -501,7 +533,7 @@ ul{
 
 
     .container_sidebar i{
-        font-size: 30px;
+        font-size: 20px;
         margin-left: 20px;
         padding-top: 10px;
     }
@@ -509,7 +541,12 @@ ul{
     .icon_xs{
         display: grid;
         gap: 8px;
-        margin-top: -30px;
+        margin-top: -60px;
+        font-size: 30px;
+    }
+
+    .fa-house{
+        color: white;
     }
 
     .scrollbar,.plus{
@@ -517,11 +554,17 @@ ul{
     }
 
     .menu_music{
-        min-width: 80px;
+        display: flex;
+        justify-content: center;
+        min-width: 40px;
     }
 
     .menu_music hr{
         display: none;
+    }
+
+    .install img{
+        width: 30px;
     }
 
 
