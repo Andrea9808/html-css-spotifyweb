@@ -33,7 +33,7 @@
 }
 
 .menu_music{
-    width: 250px;
+    min-width: 250px;
     height: 100%;
     background-color: black;
     overflow: auto;
@@ -136,10 +136,11 @@ ul{
         flex-grow: 1;
         height: 100%;
         background-color:#030b18;;
+        overflow: auto;
     }
 
 
-    
+
 
     /* BARRA UPGRADE */
 
@@ -156,6 +157,7 @@ ul{
     }
 
     #upgrade_button{
+        font-size: 12px;
         text-decoration: none;
         color: white;
         border: 1px solid white;
@@ -169,8 +171,81 @@ ul{
         color: black;
     }
 
-    
+    /* OPZIONI */
 
+    .option{
+       text-align: center;
+        margin: 100px 0;
+    }
+
+    .option ul li{
+        color: #988e8e;
+        font-size: 10px;
+        display: inline-block;
+        padding: 5px;
+    }
+
+
+    /* ALBUM (RIGA DA 6) */
+
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    
+    .row h3{
+        width: 100%;
+        padding: 10px;
+        color: white;
+    }
+
+    .col{
+        width: calc(100%/6);
+        padding: 10px;
+        
+    }
+
+    .row img{
+        width: 100%;
+    }
+
+    #text{
+        text-align: center;
+    }
+
+    .col h4{
+        color: white;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .col span{
+        color: #988e8e;
+        font-size: 10px;
+    }
+
+
+    /* ALBUM A DUE RIGHE */
+
+    .text_coltwo{
+        width: 100%;
+
+    }
+
+    .text_coltwo span{
+        color: #988e8e;
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    /* ALBUM A DUE RIGHE (tondi) */
+
+    .round{
+        object-fit: cover;
+        border-radius: 50%;
+    }
 
 
     /* FOOTER */
@@ -292,7 +367,7 @@ ul{
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: rgb(153, 254, 0);
+    background-color: white;
     position: absolute;
     top: -60%;
     left: 97%;
@@ -310,7 +385,7 @@ ul{
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: rgb(153, 254, 0);
+    background-color: white;
     position: absolute;
     top: -60%;
     left: 97%;
@@ -329,6 +404,15 @@ ul{
     color: white;
     cursor: pointer;
 }
+
+ /* OPZIONI */
+.option ul li:hover{
+    border-bottom: 2px solid greenyellow;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+
 
 
 
@@ -425,4 +509,4 @@ ul{
 }
 
 
-/* ****************************CREARE LA SCROLLBAR NEL MENU LATERALE, AGGIUSTARE LA FOTO, CAPIRE COME MAI NON SI INSERISCE L'icona piccola (SCROLLBAR?) */
+/* ****************************AGGIUSTARE LA FOTO, CAPIRE COME MAI NON SI INSERISCE L'icona piccola
