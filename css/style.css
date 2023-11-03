@@ -6,7 +6,10 @@
 }
 
 
+
+
 /* STILI CONTAINER PLAYER */
+
 
 .container_player{
     height: calc(100vh - 100px);
@@ -14,7 +17,12 @@
 }
 
 
-/* STILI MENU LATERALE */
+/* STILI MENU LATERALE (SIDEBAR) */
+
+#logo_small,.icon_xs{
+    display: none;
+}
+
 
 .container_sidebar{
     font-size: 12px;
@@ -28,6 +36,7 @@
     width: 250px;
     height: 100%;
     background-color: black;
+    overflow: auto;
 }
 
 .menu_music img{
@@ -77,16 +86,17 @@ ul{
     list-style-type: none;
 }
 
-.scrollbar{
-    overflow-y: auto;
-    flex-grow: 1;
-    min-height: 75px;
-}
 
 .foot_menu{
-    margin-top: 70px;
-    position: fixed;
-    z-index: 500;
+
+    position: absolute;
+    bottom: 80px;
+    background-color: black;
+}
+
+.scrollbar{
+    overflow-y: auto;
+    height: 200px;
 }
 
 #install{
@@ -103,15 +113,21 @@ ul{
 
 }
 
-.fa-user{
-    color: white;
-    background-color: #988e8e;
-    font-size: 20px;
-    border-radius: 50%;
-    padding: 5px;
-    margin-top: 10px;
+.profile{
+    display: flex;
+    align-items: center;
+    margin: 0 -20px;
 
 }
+
+.foot_menu img{
+    width: 10%;
+    background-color: #988e8e;
+    border-radius: 50%;
+}
+
+
+
 
 
 /* STILI CONTENITORE PRINCIPALE (ALBUM) */
@@ -119,20 +135,57 @@ ul{
     .main_content{
         flex-grow: 1;
         height: 100%;
-        background-color: brown;
+        background-color:#030b18;;
     }
 
+
+    
+
+    /* BARRA UPGRADE */
+
+    .upgrade{
+        display: flex;
+        height: 90px;
+        background-color: rgb(26, 19, 19);
+        filter: opacity(0.5);
+        justify-content: end;
+        align-items: center;
+        position: fixed;
+        z-index: 500;
+        width: calc(100vw - 250px);
+    }
+
+    #upgrade_button{
+        text-decoration: none;
+        color: white;
+        border: 1px solid white;
+        padding: 10px 15px;
+        border-radius: 50px;
+        margin-right: 41px;
+    }
+
+    #upgrade_button:hover{
+        background-color: white;
+        color: black;
+    }
+
+    
+
+
+
+    /* FOOTER */
 
 /* BARRA CONTROLLI */
 
 .controller{
-    height: 90px;
+    height: 100px;
     background-color:rgb(49, 40, 40);
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
     font-size: 10px;
+    position: relative;
 }
 
 /* PARTE SINISTRA */
@@ -277,9 +330,22 @@ ul{
     cursor: pointer;
 }
 
+
+
+
+
+
+
+
+
+
 /* VERSIONE MD */
 
+@media all and (max-width:900px){
+    
+   
 
+}
 
 
 
@@ -294,6 +360,8 @@ ul{
         padding: 5px;
     }
 
+    
+
 }
 
 
@@ -303,8 +371,58 @@ ul{
 
 @media all and (max-width:480px){
 
+    #logo_small{
+        width: 45%;
+    }
+
     .controller i{
         padding: 2px;
     }
 
+    /* SIDEBAR */
+
+    #logo_main{
+        display: none;
+    }
+
+
+    .container_sidebar span{
+        display: none;
+    }
+
+
+    .container_sidebar i{
+        font-size: 30px;
+        margin-left: 20px;
+        padding-top: 10px;
+    }
+
+    .icon_xs{
+        display: grid;
+        gap: 8px;
+        margin-top: -30px;
+    }
+
+    .scrollbar,.plus{
+        display: none;
+    }
+
+    .menu_music{
+        width: 80px;
+    }
+
+    .menu_music hr{
+        display: none;
+    }
+
+
+    /* BARRA UPGRADE */
+    .upgrade{
+        width: calc(100vw - 80px);
+    }
+
+
 }
+
+
+/* ****************************CREARE LA SCROLLBAR NEL MENU LATERALE, AGGIUSTARE LA FOTO, CAPIRE COME MAI NON SI INSERISCE L'icona piccola (SCROLLBAR?) */

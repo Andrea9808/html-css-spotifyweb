@@ -10,101 +10,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
 </head>
+
+
 <body>
+    <main>
+        <div class="container_player">
+            <div class="menu_music">
 
-    <div class="container_player">
-        <div class="menu_music">
-            <div class="container_sidebar">
-                <div>
-                    <img src="img/logo.svg" alt="">
-                </div>
-                <div class="home">
-                    <span><i class="fa-solid fa-house"></i> Home</span>
-                    <span><i class="fa-solid fa-magnifying-glass"></i> Cerca</span>
-                    <span><i class="fa-solid fa-lines-leaning"></i> La tua libreria</span>
-                </div>
+                <!-- MENU LATERALE -->
 
-                <div class="playlist">
-                    <span>PLAYLIST</span>
-                    <div class="plus">
-                        <p><i class="fa fa-plus-square"></i>Crea la tua playlist</p>
+                <div class="container_sidebar">
+                    <div>
+                        <img id="logo_main" src="img/logo.svg" alt="logo1">
+                        <img id="logo_small" src="img/logo-small.svg" alt="logo2">
                     </div>
-                    <ul class="scrollbar">
-                        <li>Playlist di Andrea</li>
-                        <li>Crea la tua playlist</li>
-                        <li>Crea la tua playlist</li>
-                        <li>Crea la tua playlist</li>
-                        <li>Crea la tua playlist</li>
-                        <li>Crea la tua playlist</li>
-                        <li>Crea la tua playlist</li>
-                    </ul>
-                </div>
-
-                <div class="foot_menu">
-                    <span id="install"><i class="fa fa-arrow-circle-down"></i> Installa app</span>
-                    <hr>
-                    <i class="fa-regular fa-user"></i><span> Andrea</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="main_content">
-
-        </div>
-
-    </div>
-
-    <!-- BARRA CONTROLLI PLAY -->
-    <div class="controller">
-
-        <!-- SINISTRA -->
-        <div class="left_col">
-            <img src="img/sinister.jpeg" alt="Sinister">
-            <div class="content_controller">
-                <div>
-                    <h6>Sinister</h6>
-                    <span>Sinister "soundtrack"</span>
-                </div>
-                <div>
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-folder"></i>
-                </div>
-            </div>
-        </div>
+                    <div class="home">
+                        <span><i class="fa-solid fa-house"></i> Home</span>
+                        <span><i class="fa-solid fa-magnifying-glass"></i> Cerca</span>
+                        <span><i class="fa-solid fa-lines-leaning"></i> La tua libreria</span>
 
 
-        <!-- CENTRO -->
-        <div class="center_col">
-            <div>
-                <i class="fa-solid fa-shuffle"></i>
-                <i class="fa-solid fa-backward-step"></i>
-                <i class="fa-regular fa-circle-play"></i>
-                <i class="fa-solid fa-forward-step"></i>
-                <i class="fa-solid fa-rotate-right"></i>
-            </div>
-            <div class="container_play_bar">
-                <span>0.25</span>
-                <div class="play_bar">
-                    <div class="progress">
-                        <div class="ball"></div>
+                        <!-- MODALITA XS (MENU LATERALE)-->
+                        <div class="icon_xs">
+                            <i class="fa-solid fa-house"></i>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-solid fa-lines-leaning"></i>
+                        </div>
+                    </div>
+
+                    <div class="playlist">
+                        <span>PLAYLIST</span>
+                        <div class="plus">
+                            <p><i class="fa fa-plus-square"></i>Crea la tua playlist</p>
+                        </div>
+                        <ul class="scrollbar">
+                            <li>Playlist di Andrea</li>
+                            <li>Crea la tua playlist</li>
+                            <li>Crea la tua playlist</li>
+                            <li>Crea la tua playlist</li>
+                            <li>Crea la tua playlist</li>
+                            <li>Crea la tua playlist</li>
+                            <li>Crea la tua playlist</li>
+                        </ul>
+                    </div>
+
+                    <div class="foot_menu">
+                        <span id="install"><i class="fa fa-arrow-circle-down"></i> Installa app</span>
+                        <hr>
+                        <div class="profile">
+                            <img src="img/profile.svg" alt="profilo"><span> Andrea</span>
+                        </div>
+
+                        <!-- MODALITA XS FOOT -->
+                        <!-- <div>
+                        <i class="fa fa-arrow-circle-down"></i>
+                        </div> -->
                     </div>
                 </div>
-                <span>4.35</span>
             </div>
-        </div>
 
-
-        <!-- DESTRA -->
-        <div class="right_col">
-            <div class="container__volume">
-                <i class="fa-solid fa-bars"></i>
-                <i class="fa-solid fa-tv"></i>
-                <i class="fa-solid fa-volume-high"></i>
-                <div class="volume_bar">
-                    <div class="progress"></div>
+            <!-- NAV BAR EFFETTUA UPGRADE -->
+            <div class="main_content">
+                <div class="upgrade">
+                    <a id="upgrade_button" href="#">EFFETTUA L'UPGRADE</a>
                 </div>
             </div>
+
         </div>
 
+        <!-- BARRA CONTROLLI PLAY -->
+        <div class="controller">
+
+            <!-- SINISTRA -->
+            <div class="left_col">
+                <img src="img/sinister.jpeg" alt="Sinister">
+                <div class="content_controller">
+                    <div>
+                        <h6>Sinister</h6>
+                        <span>Sinister "soundtrack"</span>
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-folder"></i>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- CENTRO -->
+            <div class="center_col">
+                <div>
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-rotate-right"></i>
+                </div>
+                <div class="container_play_bar">
+                    <span>0.25</span>
+                    <div class="play_bar">
+                        <div class="progress">
+                            <div class="ball"></div>
+                        </div>
+                    </div>
+                    <span>4.35</span>
+                </div>
+            </div>
+
+
+            <!-- DESTRA -->
+            <div class="right_col">
+                <div class="container__volume">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-tv"></i>
+                    <i class="fa-solid fa-volume-high"></i>
+                    <div class="volume_bar">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+            </div>
+    </main>
 </body>
 </html>
