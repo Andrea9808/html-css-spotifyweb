@@ -120,6 +120,10 @@ ul{
     padding-top: 10px;
 }
 
+/* .install:hover #svg{
+    fill: white;
+} */
+
 .install span{
    color: #988e8e;
 }
@@ -161,7 +165,7 @@ ul{
 
     .upgrade{
         display: flex;
-        height: 90px;
+        height: 70px;
         background-color: rgb(26, 19, 19);
         filter: opacity(0.5);
         justify-content: end;
@@ -181,10 +185,6 @@ ul{
         margin-right: 41px;
     }
 
-    #upgrade_button:hover{
-        background-color: white;
-        color: black;
-    }
 
     /* OPZIONI */
 
@@ -218,7 +218,7 @@ ul{
 
     .col{
         width: calc(100%/6);
-        padding: 10px;
+        padding: 20px;
     }
 
     .row img{
@@ -419,12 +419,27 @@ ul{
     cursor: pointer;
 }
 
+/* BUTTON UPGRADE */
+
+#upgrade_button:hover{
+    padding: 13px 17px;
+    color: white;
+    cursor: pointer;
+}
+
  /* OPZIONI */
 .option ul li:hover{
     border-bottom: 2px solid greenyellow;
     cursor: pointer;
     margin-right: 10px;
+    color: white;
 }
+
+.plus p:hover{
+    cursor: pointer;
+    color: white;
+}
+
 
 /* PLAY IN HOVER */
 
@@ -452,8 +467,22 @@ ul{
     cursor: pointer;
 }
 
+/* ICONE BARRA CONTROLLER */
+
+.fa-folder:hover{
+    color: white;
+}
 
 
+.fa-heart:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.center_col .fa-circle-play:hover{
+    font-size: 20px;
+    cursor: pointer;
+}
 
 
 
@@ -467,7 +496,10 @@ ul{
 
 @media all and (max-width:900px){
     
-   
+    .col{
+        width: calc(100%/4);
+        padding: 2px;
+    }
 
 }
 
@@ -476,13 +508,20 @@ ul{
 
 /* VERSIONE S */
 
-@media all and (max-width:700px){
+@media all and (max-width:600px){
     
     /* CONTOLLER PLAY */
 
     .controller i{
         padding: 5px;
     }
+
+     /* ALBUM */
+    
+     .col {
+        width: calc(100%/2);
+        padding: 10px;
+      }
 
     
 
@@ -570,7 +609,7 @@ ul{
 
     /* BARRA UPGRADE */
     .upgrade{
-        width: calc(100vw - 80px);
+        width: calc(100vw - 40px);
     }
 
 
