@@ -369,6 +369,10 @@ ul{
 
 /* **************ANIMAZIONI*************** */
 
+:hover{
+    cursor: pointer;
+}
+
 /* barra player */
 .play_bar:hover .progress{
     background-color: rgb(153, 254, 0);
@@ -391,7 +395,6 @@ ul{
 .volume_bar:hover .progress{
     background-color: rgb(153, 254, 0);
     position: relative;
-    cursor: pointer;
 }
 
 .volume_bar:hover .progress::after{
@@ -410,33 +413,47 @@ ul{
 .home span:hover{
     color: white;
     border-left: 3px solid greenyellow;
-    cursor: pointer;
     margin-right: 10px;
 }
 
 .playlist li:hover{
     color: white;
-    cursor: pointer;
 }
+
+
+#alt{
+    display: none;
+}
+
+.install:hover #main {
+    display: none;
+}
+
+.install:hover #alt {
+    display: inline-block;
+}
+
+
+
+
+
+
 
 /* BUTTON UPGRADE */
 
 #upgrade_button:hover{
     padding: 13px 17px;
     color: white;
-    cursor: pointer;
 }
 
  /* OPZIONI */
 .option ul li:hover{
     border-bottom: 2px solid greenyellow;
-    cursor: pointer;
     margin-right: 10px;
     color: white;
 }
 
 .plus p:hover{
-    cursor: pointer;
     color: white;
 }
 
@@ -458,13 +475,11 @@ ul{
 
 .play img:hover{
     filter: opacity(0.5);
-    cursor: pointer;
 }
 
 .play:hover .fa-circle-play{
     display: block;
     color: white;
-    cursor: pointer;
 }
 
 /* ICONE BARRA CONTROLLER */
@@ -476,18 +491,11 @@ ul{
 
 .fa-heart:hover{
     color: white;
-    cursor: pointer;
 }
 
 .center_col .fa-circle-play:hover{
     font-size: 20px;
-    cursor: pointer;
 }
-
-
-
-
-
 
 
 
