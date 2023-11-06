@@ -25,7 +25,7 @@
 
 
 .container_sidebar{
-    font-size: 12px;
+    font-size: 15px;
 }
 
 .container_sidebar img,.playlist,.foot_menu{
@@ -99,21 +99,18 @@ ul{
     height: 200px;
 }
 
-#install{
-    color: #988e8e;
-}
 
 .foot_menu hr{
     width: 200px;
     margin-top: 10px;
 }
 
-.foot_menu span{
+.profile span{
     color: white;
-
 }
 
 .install{
+    color: white;
     display: flex;
     align-items: center;
     margin: -25px -25px;
@@ -124,7 +121,7 @@ ul{
     fill: white;
 } */
 
-.install span{
+.install{
    color: #988e8e;
 }
 
@@ -410,9 +407,14 @@ ul{
 
 /* sidebar */
 
-.fa-plus-square:hover{
+.plus:hover{
     color: white;
 }
+
+.fa-plus-square:hover{
+    color: #fff;
+}
+
 
 .home span:hover{
     color: white;
@@ -437,11 +439,13 @@ ul{
     display: inline-block;
 }
 
-.install span:hover{
+.foot_menu:hover{
     color: white;
 }
+
+
 .install:hover{
-    color: white;
+    color: #fff;
 }
 
 
@@ -464,9 +468,6 @@ ul{
     color: white;
 }
 
-.plus p:hover{
-    color: white;
-}
 
 
 /* PLAY IN HOVER */
