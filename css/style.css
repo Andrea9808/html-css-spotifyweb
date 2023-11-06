@@ -440,6 +440,9 @@ ul{
 .install span:hover{
     color: white;
 }
+.install:hover{
+    color: white;
+}
 
 
 
@@ -639,3 +642,12 @@ ul{
 
 }
 
+
+/* BONUS NAV UPGRADE DISAPPEARED*/
+
+
+@media all and (max-height:250px){
+    .upgrade{
+        display: none;
+    }
+}
