@@ -36,7 +36,7 @@
     min-width: 250px;
     height: 100%;
     background-color: black;
-    overflow: auto;
+    overflow: hidden;
 }
 
 .menu_music img{
@@ -410,6 +410,10 @@ ul{
 
 /* sidebar */
 
+.fa-plus-square:hover{
+    color: white;
+}
+
 .home span:hover{
     color: white;
     border-left: 3px solid greenyellow;
@@ -431,6 +435,10 @@ ul{
 
 .install:hover #alt {
     display: inline-block;
+}
+
+.install span:hover{
+    color: white;
 }
 
 
